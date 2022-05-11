@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       .row {
+width: 90%;
+max-width: 960px;
+margin: 0 auto;
+display: flex;
+}
+
+.row::after {
+content: "";
+display: block;
+clear: left;
+}
+
+.column {
+float: left;
+width: 16.66%;
+box-sizing: border-box;
+padding: 8px;
+}
+p {
+    margin:0;
+    margin-bottom:30px;
+    padding:0;
+    text-align: center;
+    
+}
+img {
+    background-color: #00bfff;
+    height: 144px;
+    
+}
+#last {
+    clear:both;
+}
+
+
+@media screen and (max-width: 1024px) {
+.column {
+width: 33.33%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.column {
+width: 50%;
+}
+}
+
+@media screen and (max-width: 414px) {
+.column {
+width: 100%;
+}
+}
+     
+    </style>
+</head>
+<body>
+  
+    <div id="row">
+        <h1>Galery heading</h1>
+        <div class="column">
+          <div class="box">
+              <img src="placeholder.png" alt="placeholder">
+              <p>Image title</p>
+              <img src="placeholder.png" alt="placeholder">
+              <p>Image title</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <img src="placeholder.png" alt="placeholder">
+            <p>Image title</p>
+            <img src="placeholder.png" alt="placeholder">
+            <p>Image title</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <img src="placeholder.png" alt="placeholder">
+            <p>Image title</p>
+            <img src="placeholder.png" alt="placeholder">
+            <p>Image title</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <img src="placeholder.png" alt="placeholder">
+              <p>Image title</p>
+              <img src="placeholder.png" alt="placeholder">
+              <p>Image title</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <img src="placeholder.png" alt="placeholder">
+            <p>Image title</p>
+            <img src="placeholder.png" alt="placeholder">
+            <p>Image title</p>
+          </div>
+        </div>
+        <p id="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt architecto accusantium quas sed cupiditate, dolorum voluptatibus, cumque tempora magnam, ab in! Minima, laboriosam possimus. Consectetur vel quis ipsam minima natus, ratione iusto deleniti esse voluptatum nam recusandae maiores atque dolores repellat veritatis, maxime corrupti quae rem excepturi dicta necessitatibus?</p>
+        </div>
+        
+        
+          
+</body>
+</html>
